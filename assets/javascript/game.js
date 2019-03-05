@@ -1,7 +1,7 @@
 // Generate the random number
 
 $(document).ready(function() {
-    var randomNum = Math.floor(Math.random())
+    var randomNum = Math.floor(Math.random()*100+1)
     console.log(randomNum);
 
 //Displaying the random number
@@ -44,13 +44,17 @@ function loser () {
 // Reset Game
 
 function reset () {
-    randomNum = Math.floor(Math.random());
+    randomNum = Math.floor(Math.random()*100+1);
     console.log(randomNum)
     $('#matchScore').text(randomNum);
     rubyCrystal = Math.floor(Math.random());
+    console.log(rubyCrystal);
     amythestCrystal = Math.floor(Math.random());
+    console.log(amythestCrystal);
     emeraldCrystal = Math.floor(Math.random());
+    console.log(emeraldCrystal);
     diamondCrystal = Math.floor(Math.random());
+    console.log(diamondCrystal);
     totalCalc = 0;
     $('#totalScore').text(totalCalc);
 }
