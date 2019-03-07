@@ -1,3 +1,16 @@
-.jumbotron {
-    background-color: blue;
+.score {
+    padding:auto;
+    margin-bottom: 15px;
+    margin-top: 15px;
+    text-align:center;
 }
+
+.footer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    color: white;
+    text-align: center;
+    font-family: 'Times New Roman', Times, serif
+  }

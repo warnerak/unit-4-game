@@ -13,53 +13,107 @@
 
 </head>
 
-<body>
+<body background = "https://www.toptal.com/designers/subtlepatterns/patterns/circuit.png">
 
-  <div class="jumbotron text-center">
-    <h1>Crystal Collector</h1></div>
-
-      <div class="container-fluid">
+  <header>
+    <div class="container p-0" style="width: 480px">
         <div class="row">
-          <div class="col-sm-12 instructions">
+            <div class="col-md-12">
+                <div class="p-3 mb-0 text-white" style="background-color: darkorchid">
+                    <h3 class="text-center" style="font-family: Georgia, 'Times New Roman', Times, serif">CRYSTAL COLLECTOR</h3>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+
+
+
+
+  <div class="jumbotron text-center m-0 p-3" style="background-color: transparent">
+        <div class="container-fluid" style= "background-color: grey; width: 960px; color: white; font-family: Georgia, 'Times New Roman', Times, serif">
+        <div class="row">
+          <div class="col-sm-12 instructions mt-3 mb-3" style = "font-family: Georgia, 'Times New Roman', Times, serif">
             <h2>Instructions</h2> 
-            <p>You will be given a random number at the start of the game.</p>
-            <p>There are four crystals below. By clicking on a crystal you will add a specific amount of points to your total score.</p>
-            <p>You win the game by matching your total score to the random number. You lost the game if your total score goes above the random number.</p>
-            <p>The value of each crystal is hidden from you until you click on it.</p>
+            <li class="m-0 text-left">You will be given a random number at the start of the game.</li>
+            <li class="m-0 text-left">There are four crystals below. By clicking on a crystal you will add a specific amount of points to your total score.</li>
+            <li class="m-0 text-left">Win the game by matching your total score to the random number. Lose the game if your score goes above the random number.</li>
+            <li class="m-0 text-left">The value of each crystal is hidden from you until you click on it.</li>
           </div>
         </div>
-
-    <div class="row">
-      <div class="col-sm-9">
-        <h2>Score to match: <span id="matchScore"></span></h2>
-      </div>
-    <div class="col-sm-3">
-        <h3>Wins: <span id="wins"></span></h3>
-        <h3 class="text-left">Losses: <span id="losses"></span></h3>
-      </div>
-    </div>
-
-      <div class="row text-center">
-        <div class="col-sm-3">
-        <img src="assets\images\ruby.jpg" class="img-thumnail red" alt="Ruby Crystal" width="200" height="200" />
-        </div>
-        <div class="col-sm-3">
-        <img src="assets\images\amethyst.jpg" class="img-thumbnail blue" alt="Amythest Crystal" width="200" height="200" />
-        </div>
-        <div class="col-sm-3">
-        <img src="assets\images\emerald.jpg" class="img-thumnail yellow" alt="Emerald Crystal" width="200" height="200" />
-        </div>
-        <div class="col-sm-3">
-          <img src="assets\images\crystal.jpg" class="img-thumnail green" alt="Diamond Crystal" width="200" height="200" />
-        </div>
       </div>
 
-    <div class="row">
-      <div class="col-sm-12">
-      <h2>Your total score is: <span id="totalScore"></span></h2>
+
+  <!-- <div class="jumbotron text-center m-0 p-3" style="background-color: transparent"> -->
+    <div class="score container-fluid" style= "background-color: darkorchid; width: 240px; color: white; font-family: Georgia, 'Times New Roman', Times, serif">
+      <div class="row">
+        <div class="col-sm-12 mt-3">
+          <h4>Score to match:</h4>
+        </div>
       </div>
+      <div class = "row">
+        <div class="col-sm-12">
+          <span id="matchScore"></span>
+        </div>
+      </div>
+      <div class = "row">
+        <div class="col-sm-6">
+          <h6>Wins: </h6>
+        </div>
+        <div class="col-sm-6">
+          <h6>Losses: </h6>
+        </div>
+      </div>
+      <div class = "row">
+        <div class="col-sm-6">
+          <span id="wins"></span>
+        </div>
+        <div class="col-sm-6 mb-3">
+          <span id="losses"></span>
+        </div>
+      </div>
+      
     </div>
+  <!-- </div> -->
+  
+    <div class="score container-fluid" style= "width: 720px">
+      <div class="images row text-center">
+        <div class="col-sm-6">
+        <input type="image" src="assets\images\ruby.jpg" class = "ruby" style = "border: darkorchid; border-style: solid" width="100" height="100"/>
+        </div>
+        <div class="col-sm-6">
+        <input type="image" src="assets\images\amethyst.jpg" class = "amythest" style = "border: darkorchid; border-style: solid" width="100" height="100"/>
+        </div>
+      </div>
+      <div class="row text-center mt-3">
+        <div class="col-sm-6">
+        <input type="image" src="assets\images\emerald.jpg" class = "emerald" style = "border: darkorchid; border-style: solid" width="100" height="100"/>
+        </div>
+        <div class="col-sm-6">
+        <input type="image" src="assets\images\crystal.jpg" class = "diamond" style = "border: darkorchid; border-style: solid" width="100" height="100"/>
+        </div>
+      </div>
+
+
+
+  <footer class= "footer">
+      <div class="container-fluid text-center" style= "background-color: grey; width: 480px">
+        <div class="row ">
+          <div class="col-sm-12">
+            <h4>Your total score is: </h4>
+          </div>
+        </div>
+        <div class="row">
+            <div class="col-sm-12 mb-3">
+              <span id="totalScore"></span>
+            </div>
+          </div>
     </div>
+  </footer>
+
+
+ 
+    
 
 
 </body>
